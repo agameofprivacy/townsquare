@@ -6,7 +6,7 @@ const csv=require('csvtojson')
 async function start() {
     const jsonArray=await csv().fromFile(csvFilePath);
 
-    var client = algoliasearch('90F7LI9KGM', '57f2bad9d160a2254d32e050613c798b');
+    // var client = algoliasearch('90F7LI9KGM', '57f2bad9d160a2254d32e050613c798b');
     var index = client.initIndex('dev_ORGANIZATIONS');
     
     var orgs = []
